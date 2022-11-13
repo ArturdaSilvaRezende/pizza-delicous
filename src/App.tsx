@@ -1,9 +1,12 @@
-function App() {
-    return (
-        <div className="App">
-            <h1>Hello World!!!</h1>
-        </div>
-    );
-}
+import { Main } from "./pages/Main";
+import { GlobalStyle } from "./shared/assets/styles/globalStyle";
+import "./shared/assets/fonts/flaticon/font/flaticon.css";
 
-export default App;
+export const App = () => {
+    return (
+        <>
+            <GlobalStyle />
+            <Main />
+        </>
+    );
+};
