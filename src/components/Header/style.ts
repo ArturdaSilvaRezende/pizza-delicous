@@ -84,6 +84,7 @@ export const Navbar = styled.nav`
         padding: 20px 40px;
         text-align: center;
         display: none;
+        z-index: 999;
 
         ul {
             flex-direction: column;

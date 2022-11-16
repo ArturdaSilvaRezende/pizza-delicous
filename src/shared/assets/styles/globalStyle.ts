@@ -27,6 +27,10 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Poppins", sans-serif;
     }
 
+    img {
+        display: block;
+    }
+
     // ========== animation - open
     .slideInLeft {
         animation-name: slideInLeft;
@@ -69,6 +73,8 @@ export const GlobalStyle = createGlobalStyle`
         --light: #f8f9fa;
         --dark: #343a40;
         --bg-container: #000;
+        --text-dark: #000;
+        --swiper-pagination-bullet-inactive-color: #fac564;
     }
 
 `;
