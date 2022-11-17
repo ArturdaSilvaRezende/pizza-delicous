@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import BgBody from "./images/bg-body.jpg";
+
 export const GlobalStyle = createGlobalStyle`
 
     * {
@@ -25,6 +27,9 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: "Poppins", sans-serif;
+        background-image: url(${BgBody});
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     img {
@@ -36,6 +41,7 @@ export const GlobalStyle = createGlobalStyle`
         animation-name: slideInLeft;
         animation-duration: 1s;
         animation-fill-mode: both;
+        display: block;
     }
 
 
@@ -75,6 +81,8 @@ export const GlobalStyle = createGlobalStyle`
         --bg-container: #000;
         --text-dark: #000;
         --swiper-pagination-bullet-inactive-color: #fac564;
+        --twitter: #1DA1F2;
+        --facebook: #4267B2;
     }
 
 `;
