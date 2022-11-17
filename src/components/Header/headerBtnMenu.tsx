@@ -15,7 +15,7 @@ export const HeaderBtn = (props: Props) => {
 
     const handleMenu = () => {
         if (ref.current) {
-            if (!props.isMenu) {
+            if (props.isMenu === false) {
                 ref.current.style.display = "block";
                 ref.current.classList.remove("slideOutLeft");
                 ref.current.classList.add("slideInLeft");
@@ -29,7 +29,7 @@ export const HeaderBtn = (props: Props) => {
                 if (ref.current) {
                     ref.current.style.display = "none";
                 }
-            }, 1500);
+            }, 500);
 
             return props.setIsMenu(false);
         }
