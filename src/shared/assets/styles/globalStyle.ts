@@ -83,6 +83,7 @@ export const GlobalStyle = createGlobalStyle`
         --swiper-pagination-bullet-inactive-color: #fac564;
         --twitter: #1DA1F2;
         --facebook: #4267B2;
+        --color-icons: #5c3d03;
     }
 
 `;

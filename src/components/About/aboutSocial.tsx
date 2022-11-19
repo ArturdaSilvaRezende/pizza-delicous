@@ -1,6 +1,4 @@
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 import * as C from "./style";
 
