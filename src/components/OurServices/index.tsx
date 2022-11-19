@@ -1,4 +1,4 @@
-import { TitleGlobal } from "../titleGlobal";
+import { TitleGlobal } from "../TitleGlobal";
 import * as C from "./style";
 
 export const OurServices = () => {
