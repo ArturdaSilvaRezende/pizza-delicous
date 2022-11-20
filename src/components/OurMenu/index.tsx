@@ -1,5 +1,5 @@
 import { TitleGlobal } from "../TitleGlobal";
-import { OurMenuContent } from "./OurMenuContent";
+import { OurMenuContents } from "./OurMenuContents";
 import { OurMenuPricing } from "./OurMenuPricing";
 import * as C from "./style";
 
@@ -11,7 +11,7 @@ export const OurMenu = () => {
                 colorTitle="var(--white)"
                 colorSubTitle="var(--gray)"
             />
-            <OurMenuContent />
+            <OurMenuContents />
             <OurMenuPricing />
         </C.OurMenu>
     );

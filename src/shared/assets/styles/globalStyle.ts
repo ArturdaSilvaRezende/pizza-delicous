@@ -36,6 +36,15 @@ export const GlobalStyle = createGlobalStyle`
         display: block;
     }
 
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+    }
+
+    // ================================ Animations ================================
+
     // ========== animation - open
     .slideInLeft {
         animation-name: slideInLeft;
@@ -70,7 +79,9 @@ export const GlobalStyle = createGlobalStyle`
             visibility: hidden;
             transform: translateX(-100%);
         }
-    } 
+    }
+
+    // ================================ Root ================================
 
     :root {
         --orange: #fac564;

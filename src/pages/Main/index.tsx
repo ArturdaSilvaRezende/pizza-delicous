@@ -1,4 +1,5 @@
 import { About } from "../../components/About";
+import { Counter } from "../../components/Counter";
 import { Header } from "../../components/Header";
 import { OurMenu } from "../../components/OurMenu";
 import { OurServices } from "../../components/OurServices";
@@ -12,6 +13,7 @@ export const Main = () => {
             <About />
             <OurServices />
             <OurMenu />
+            <Counter />
         </main>
     );
 };

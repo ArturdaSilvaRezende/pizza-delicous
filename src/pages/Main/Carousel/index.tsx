@@ -25,7 +25,7 @@ export const Carousel = () => {
             >
                 <SwiperSlide>
                     <C.Card className="carousel-item__home">
-                        <div className="carousel__bg"></div>
+                        <div className="overlay"></div>
                         <figcaption>
                             <hgroup>
                                 <h2>Welcome</h2>

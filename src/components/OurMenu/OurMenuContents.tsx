@@ -6,7 +6,7 @@ import Pizza05 from "./images/pizza-5.jpg";
 import Pizza06 from "./images/pizza-6.jpg";
 import * as C from "./style";
 
-export const OurMenuContent = () => {
+export const OurMenuContents = () => {
     return (
         <C.OurMenuContent>
             {/* Figures - content on the right */}

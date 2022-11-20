@@ -1,14 +1,14 @@
 import { OurMenuPricing } from "../../shared/types/typeOurMenuPricing";
+import Pizza03 from "./images/Hawaiian-Pizza.jpg";
 import Pizza01 from "./images/pizza-1.jpg";
 import Pizza10 from "./images/pizza-10.jpg";
 import Pizza02 from "./images/pizza-2.jpg";
-import Pizza03 from "./images/pizza-3.jpg";
 import Pizza04 from "./images/pizza-4.jpg";
 import Pizza05 from "./images/pizza-5.jpg";
-import Pizza06 from "./images/pizza-6.jpg";
 import Pizza07 from "./images/pizza-7.jpg";
 import Pizza08 from "./images/pizza-8.jpg";
 import Pizza09 from "./images/pizza-9.jpg";
+import Pizza06 from "./images/pizza-bacon-horz.jpg";
 
 export const OurMenuPricingList: OurMenuPricing[] = [
     {
