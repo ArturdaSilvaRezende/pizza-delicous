@@ -1,5 +1,4 @@
 import * as C from "./style";
-
 type Props = {
     title: string;
     colorTitle: string;
