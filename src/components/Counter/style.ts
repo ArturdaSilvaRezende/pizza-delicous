@@ -28,6 +28,8 @@ export const CounterGallery = styled.figure`
 `;
 
 export const CounterContents = styled.div`
+    padding: 6% 0;
+
     background: url(${CounterBG});
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,7 +45,7 @@ export const CounterContents = styled.div`
 export const Container = styled.div`
     max-width: 960px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;

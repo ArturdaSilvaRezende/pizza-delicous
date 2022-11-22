@@ -4,6 +4,8 @@ import BgBody from "./images/bg-body.jpg";
 
 export const GlobalStyle = createGlobalStyle`
 
+     // ================================ reset ================================
+
     * {
         margin: 0;
         padding: 0;
@@ -36,6 +38,8 @@ export const GlobalStyle = createGlobalStyle`
         display: block;
     }
 
+     // ================================ global style ================================
+
     .overlay {
         position: absolute;
         inset: 0;
@@ -43,17 +47,28 @@ export const GlobalStyle = createGlobalStyle`
         z-index: -1;
     }
 
+    .active {
+        background-color: var(--orange);
+        color: var(--text-dark) !important;
+    }
+
+    .displayNone {
+        display: none !important;
+    }
+
+
     // ================================ Animations ================================
 
-    // ========== animation - open
+    // ========== animation - open ========== 
+
+    //slideIn
+
     .slideInLeft {
         animation-name: slideInLeft;
         animation-duration: 1s;
         animation-fill-mode: both;
         display: block;
     }
-
-
     @keyframes slideInLeft {
         0% {
             transform: translateX(-100%);
@@ -62,6 +77,19 @@ export const GlobalStyle = createGlobalStyle`
         100% {
             transform: translateX(0);
         }
+    }
+
+    //fadeIn
+
+    .fadeIn {
+        animation-name: fadeIn;
+        animation-duration: 0.7s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
     } 
 
     // ========== animation - close
