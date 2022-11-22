@@ -110,7 +110,7 @@ export const Card = styled.figure`
                 &:last-child {
                     background-color: transparent;
                     border: 1px solid var(--white);
-                    margin-left: 20px;
+                    margin-left: 10px;
                     color: var(--white);
 
                     &:hover {
