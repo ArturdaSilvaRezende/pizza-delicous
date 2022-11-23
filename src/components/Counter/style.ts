@@ -34,6 +34,7 @@ export const CounterContents = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     position: relative;
     z-index: 1;
 
