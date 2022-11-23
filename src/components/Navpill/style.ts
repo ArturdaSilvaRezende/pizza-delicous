@@ -1,8 +1,23 @@
 import styled from "styled-components";
+
 import NavpillHero from "./images/navpill.jpg";
 
 export const Navpill = styled.section`
     display: flex;
+    background-image: url(${NavpillHero});
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 1;
+    padding-bottom: 60px;
+    position: relative;
+
+    .navpill__overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        z-index: -1;
+    }
 
     .navpill__hero {
         img {
@@ -23,18 +38,6 @@ export const Navpill = styled.section`
     @media screen and (max-width: 992px) {
         flex-direction: column;
         position: relative;
-        z-index: 1;
-        background-image: url(${NavpillHero});
-        background-size: cover;
-        background-position: center center;
-        margin-top: 20px;
-
-        .navpill__overlay {
-            position: absolute;
-            inset: 0;
-            background-color: rgba(0, 0, 0, 0.85);
-            z-index: -1;
-        }
 
         .navpill__hero {
             display: none;
@@ -117,7 +120,8 @@ export const NavpillContents = styled.div`
                 }
 
                 .navpill__description {
-                    color: var(--gray);
+                    color: var(--white);
+                    opacity: 0.96;
                     width: 70%;
                     margin: 0 auto;
                 }
@@ -145,24 +149,6 @@ export const NavpillContents = styled.div`
 
     @media screen and (max-width: 992px) {
         margin-left: 0;
-
-        .navpill__tab {
-            figure {
-                figcaption {
-                    .navpill__description {
-                        color: var(--white);
-                        text-shadow: 0 0 4px var(--white);
-                        opacity: 0.9;
-                    }
-                }
-            }
-        }
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 992px) {
-        .navpill__tab {
-            margin-bottom: 11%;
-        }
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -182,7 +168,7 @@ export const NavpillContents = styled.div`
     @media screen and (max-width: 599px) {
         .navpill__tab {
             flex-direction: column;
-            margin: 15% 0;
+            margin: 15% 0 0 0;
 
             figure {
                 & + figure {
