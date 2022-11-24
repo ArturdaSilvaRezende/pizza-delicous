@@ -1,6 +1,7 @@
 import { About } from "../../components/About";
 import { Blog } from "../../components/Blog";
 import { Counter } from "../../components/Counter";
+import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Navpill } from "../../components/Navpill";
 import { OurMenu } from "../../components/OurMenu";
@@ -18,6 +19,7 @@ export const Main = () => {
             <Counter />
             <Blog />
             <Navpill />
+            <Footer />
         </main>
     );
 };
