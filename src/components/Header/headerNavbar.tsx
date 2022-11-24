@@ -1,4 +1,5 @@
 import { Ref, MutableRefObject, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 import * as C from "./style";
 
@@ -30,10 +31,20 @@ export const Navbar = (props: Props) => {
         <C.Navbar ref={ref}>
             <ul>
                 <li>
-                    <a href=" ">Home</a>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) => (isActive ? "active" : "")}
+                    >
+                        Home
+                    </NavLink>
                 </li>
                 <li>
-                    <a href=" ">Menu</a>
+                    <NavLink
+                        to="/menu"
+                        className={({ isActive }) => (isActive ? "active" : "")}
+                    >
+                        Menu
+                    </NavLink>
                 </li>
                 <li>
                     <a href=" ">Services</a>

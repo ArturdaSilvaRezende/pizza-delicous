@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const Blog = styled.section`
-    margin-bottom: 80px;
-`;
+export const Blog = styled.section``;
 
 export const BlogContents = styled.div``;
 

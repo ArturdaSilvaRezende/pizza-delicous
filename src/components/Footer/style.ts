@@ -9,6 +9,19 @@ export const Footer = styled.footer`
         text-align: center;
         margin-top: 130px;
         color: var(--gray);
+
+        a {
+            color: var(--white);
+            font-weight: bold;
+        }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        .footer__copy-right {
+            width: 60%;
+            line-height: 2;
+            margin: 80px auto 0 auto;
+        }
     }
 
     @media screen and (max-width: 599px) {
@@ -97,6 +110,13 @@ export const Container = styled.div`
 
     .footer__questions {
         width: 90%;
+
+        .footer__questions-address {
+            span {
+                width: 25px;
+            }
+        }
+
         h2 {
             margin-bottom: 25px;
         }
@@ -115,13 +135,14 @@ export const Container = styled.div`
 
             address {
                 color: var(--gray);
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 margin: 10px 0 0 -5px;
+                width: 60%;
             }
 
             svg {
                 color: var(--white);
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 margin-right: 15px;
             }
         }
@@ -131,6 +152,8 @@ export const Container = styled.div`
         grid-template-columns: 100%;
 
         div {
+            margin: 0 auto;
+
             & + div {
                 margin-top: 20px;
             }
@@ -143,13 +166,22 @@ export const Container = styled.div`
         }
 
         .footer__questions {
-            h2 {
-                font-size: 1.4rem;
+            div {
+                address {
+                    margin: 10px 0 0 0;
+                    width: 90%;
+                }
             }
         }
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
+        .footer__about {
+            p {
+                width: 70%;
+            }
+        }
+
         .footer__questions {
             div {
                 width: 300px;
@@ -163,6 +195,22 @@ export const Container = styled.div`
             div {
                 width: 80%;
                 margin: 0 auto;
+            }
+        }
+    }
+    @media screen and (max-width: 280px) {
+        .footer__questions {
+            div {
+                width: 80%;
+                margin: 0 auto;
+
+                svg {
+                    font-size: 1.1rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
             }
         }
     }

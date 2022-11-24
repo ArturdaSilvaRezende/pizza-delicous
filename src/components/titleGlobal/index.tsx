@@ -3,6 +3,7 @@ type Props = {
     title: string;
     colorTitle: string;
     colorSubTitle: string;
+    classNameTitle?: string;
 };
 
 export const TitleGlobal = (props: Props) => {
@@ -10,6 +11,7 @@ export const TitleGlobal = (props: Props) => {
         <C.TitleGlobal
             colorTitle={props.colorTitle}
             colorSubTitle={props.colorSubTitle}
+            className={props.classNameTitle}
         >
             <h1>{props.title}</h1>
             <h4>

@@ -10,25 +10,33 @@ export const NavpillTabs = (props: Props) => {
         <C.NavpillTabs>
             <ul>
                 <li
-                    className={props.openTab === "pizza" ? "active" : ""}
+                    className={
+                        props.openTab === "pizza" ? "active__navpill" : ""
+                    }
                     onClick={() => props.setOpenTab("pizza")}
                 >
                     Pizza
                 </li>
                 <li
-                    className={props.openTab === "drink" ? "active" : ""}
+                    className={
+                        props.openTab === "drink" ? "active__navpill" : ""
+                    }
                     onClick={() => props.setOpenTab("drink")}
                 >
                     Drinks
                 </li>
                 <li
-                    className={props.openTab === "burger" ? "active" : ""}
+                    className={
+                        props.openTab === "burger" ? "active__navpill" : ""
+                    }
                     onClick={() => props.setOpenTab("burger")}
                 >
                     Burgers
                 </li>
                 <li
-                    className={props.openTab === "pasta" ? "active" : ""}
+                    className={
+                        props.openTab === "pasta" ? "active__navpill" : ""
+                    }
                     onClick={() => props.setOpenTab("pasta")}
                 >
                     Pasta

@@ -54,7 +54,7 @@ export const Footer = () => {
                 {/* footer - questions */}
                 <div className="footer__questions">
                     <h2>Have a Questions?</h2>
-                    <div>
+                    <div className="footer__questions-address">
                         <span>
                             <FaMapMarkerAlt />
                         </span>
@@ -83,7 +83,15 @@ export const Footer = () => {
 
             <p className="footer__copy-right">
                 Copyright ©{currentYear} All rights reserved | This template is
-                made with by Colorlib
+                made with by{" "}
+                <a
+                    href="https://colorlib.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    {" "}
+                    Colorlib
+                </a>
             </p>
         </C.Footer>
     );

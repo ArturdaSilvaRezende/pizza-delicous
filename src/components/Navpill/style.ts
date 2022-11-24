@@ -11,6 +11,7 @@ export const Navpill = styled.section`
     z-index: 1;
     padding-bottom: 60px;
     position: relative;
+    margin-top: 80px;
 
     .navpill__overlay {
         position: absolute;

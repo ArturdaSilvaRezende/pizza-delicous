@@ -47,9 +47,15 @@ export const GlobalStyle = createGlobalStyle`
         z-index: -1;
     }
 
-    .active {
+    .active__navpill {
         background-color: var(--orange);
         color: var(--text-dark) !important;
+    }
+
+    .active {
+        color: var(--orange) !important;
+        border-bottom: 2px solid var(--orange) !important;
+        padding-bottom: 4px !important;
     }
 
     .displayNone {

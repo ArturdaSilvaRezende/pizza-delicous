@@ -11,7 +11,7 @@ export const Header = () => {
     return (
         <C.Header>
             <C.Container>
-                <a href=" " className="header__logo">
+                <a href="/" className="header__logo">
                     <div className="header__logo-container">
                         <p className="header__pizza">
                             <span className="flaticon-pizza-1"></span>
