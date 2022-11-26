@@ -47,16 +47,28 @@ export const Navbar = (props: Props) => {
                     </NavLink>
                 </li>
                 <li>
-                    <a href=" ">Services</a>
+                    <NavLink
+                        to="/services"
+                        className={({ isActive }) => (isActive ? "active" : "")}
+                    >
+                        Services
+                    </NavLink>
                 </li>
                 <li>
-                    <a href=" ">Blog</a>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) => (isActive ? "active" : "")}
+                    >
+                        About
+                    </NavLink>
                 </li>
                 <li>
-                    <a href=" ">About</a>
-                </li>
-                <li>
-                    <a href=" ">Contact</a>
+                    <NavLink
+                        to="/contact"
+                        className={({ isActive }) => (isActive ? "active" : "")}
+                    >
+                        Contact
+                    </NavLink>
                 </li>
             </ul>
         </C.Navbar>

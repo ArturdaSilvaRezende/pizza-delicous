@@ -270,7 +270,7 @@ export const AboutHero = styled.figure`
 
         figcaption {
             margin: 40px auto;
-            width: 90%;
+            width: 92%;
         }
     }
 

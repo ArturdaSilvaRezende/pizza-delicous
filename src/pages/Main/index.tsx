@@ -1,5 +1,6 @@
 import { About } from "../../components/About";
 import { Blog } from "../../components/Blog";
+import { ButtonBackToTop } from "../../components/ButtonBackToTop";
 import { Counter } from "../../components/Counter";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
@@ -20,6 +21,7 @@ export const Main = () => {
             <Blog />
             <Navpill />
             <Footer />
+            <ButtonBackToTop />
         </main>
     );
 };

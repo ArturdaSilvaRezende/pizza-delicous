@@ -33,6 +33,11 @@ export const Breadcrumb = styled.div`
 
         a {
             color: var(--white);
+            transition: 0.4s;
+
+            &:hover {
+                color: var(--orange);
+            }
         }
 
         span {

@@ -27,6 +27,8 @@ export const GlobalStyle = createGlobalStyle`
         border: none;
     }
 
+   
+
     body {
         font-family: "Poppins", sans-serif;
         background-image: url(${BgBody});
@@ -61,7 +63,6 @@ export const GlobalStyle = createGlobalStyle`
     .displayNone {
         display: none !important;
     }
-
 
     // ================================ Animations ================================
 
@@ -99,6 +100,9 @@ export const GlobalStyle = createGlobalStyle`
     } 
 
     // ========== animation - close
+
+    //slideOutLeft
+
     .slideOutLeft {
         animation-name: slideOutLeft;
         animation-duration: 1s;
@@ -115,6 +119,19 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    //fadeOut
+
+    .fadeOut {
+        animation-name: fadeOut;
+        animation-duration: 0.7s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+    }
+    @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    } 
+
     // ================================ Root ================================
 
     :root {
@@ -129,6 +146,7 @@ export const GlobalStyle = createGlobalStyle`
         --twitter: #1DA1F2;
         --facebook: #4267B2;
         --color-icons: #5c3d03;
+        --contact-span: #bfbfbf;
     }
 
 `;

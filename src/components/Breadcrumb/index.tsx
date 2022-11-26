@@ -7,7 +7,7 @@ type Props = {
 
 export const Breadcrumb = (props: Props) => {
     return (
-        <C.Breadcrumb>
+        <C.Breadcrumb className="breadcrumb">
             <div className="overlay"></div>
             <h1 className="breadcrumb__title">{props.title}</h1>
             <div className="breadcrumb__items">

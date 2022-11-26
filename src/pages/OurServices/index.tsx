@@ -1,17 +1,19 @@
+import { Blog } from "../../components/Blog";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { ButtonBackToTop } from "../../components/ButtonBackToTop";
+import { Counter } from "../../components/Counter";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
-import { Navpill } from "../../components/Navpill";
-import { OurMenu } from "../../components/OurMenu";
+import { OurServices } from "../../components/OurServices";
 
-export const Menu = () => {
+export const Services = () => {
     return (
         <>
             <Header />
-            <Breadcrumb title="Our Menu" page="Menu" />
-            <OurMenu classNameTitle="displayNone" />
-            <Navpill />
+            <Breadcrumb title="Our Services" page="Services" />
+            <OurServices />
+            <Counter />
+            <Blog />
             <Footer />
             <ButtonBackToTop />
         </>
